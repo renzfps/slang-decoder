@@ -1,0 +1,47 @@
+.slang-decoder-term {
+  text-decoration: underline dotted #7c5cff !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 3px !important;
+  cursor: help !important;
+}
+
+.slang-decoder-term:hover {
+  background: rgba(124, 92, 255, 0.15) !important;
+  border-radius: 3px;
+}
+
+#slang-decoder-tooltip {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  max-width: 280px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #1e1b2e;
+  color: #ffffff;
+  font: 14px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  top: -9999px;
+  left: -9999px;
+  text-align: left;
+}
+
+#slang-decoder-tooltip.sd-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#slang-decoder-tooltip .sd-term {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #b8a6ff;
+  margin-bottom: 2px;
+}
+
+#slang-decoder-tooltip .sd-def {
+  font-weight: 500;
+}

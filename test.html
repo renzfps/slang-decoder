@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Slang Decoder test</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 520px; margin: 40px auto; padding: 0 16px; background: #f4f4f8; }
+  .msg { background: #fff; border-radius: 14px; padding: 10px 14px; margin: 8px 0; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+  .me { background: #7c5cff; color: #fff; margin-left: 60px; }
+  b { display: block; font-size: 12px; opacity: .6; }
+</style></head>
+<body>
+  <h2>Slang Decoder test chat</h2>
+  <p>Hover the underlined words. A new message is added every few seconds to show it works on live chats.</p>
+  <div id="chat">
+    <div class="msg"><b>Sam</b>lol did you see that video</div>
+    <div class="msg me"><b>You</b>LMFAO yes, ngl I watched it like 5 times</div>
+    <div class="msg"><b>Sam</b>omg same. brb getting food</div>
+    <div class="msg"><b>Sam</b>(plain words like lollipop and goat stay normal, but the GOAT gets decoded)</div>
+  </div>
+  <script>
+    const lines = ["idk tbh, lmk what you think", "ttyl, gtg!", "smh fr fr", "ikr? btw hmu later"];
+    let i = 0;
+    setInterval(() => {
+      if (i >= lines.length) return;
+      const d = document.createElement("div");
+      d.className = "msg"; d.innerHTML = "<b>Sam</b>" + lines[i++];
+      document.getElementById("chat").appendChild(d);
+    }, 3000);
+  </script>
+</body>
+</html>
