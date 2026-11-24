@@ -1,7 +1,7 @@
 # Slang Decoder (Chrome extension)
 
-![Uploading {E2A51AAF-E605-4DBC-BC17-D2DAA0039E78}.png…]()
 
+<img width="523" height="168" alt="image" src="https://github.com/user-attachments/assets/5e412a0c-12bd-4113-854e-4f3986f9815d" />
 
 
 Underlines internet slang like "lol", "lmfao", "idk" and "ngl" on any web page.
