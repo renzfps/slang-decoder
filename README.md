@@ -1,5 +1,9 @@
 # Slang Decoder (Chrome extension)
 
+![Uploading {E2A51AAF-E605-4DBC-BC17-D2DAA0039E78}.png…]()
+
+
+
 Underlines internet slang like "lol", "lmfao", "idk" and "ngl" on any web page.
 Hover over an underlined word to see what it means.
 
